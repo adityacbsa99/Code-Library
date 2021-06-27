@@ -1,0 +1,30 @@
+https://codeforces.com/blog/entry/83441
+
+
+INPUT:
+
+
+import io,os,sys
+input = io.BytesIO(os.read(0,os.fstat(0).st_size)).readline
+s=input().decode()
+print(s)
+
+
+
+OUTPUT:
+
+
+
+
+For printing an integer, instead of
+
+print(n)
+Use :-
+
+sys.stdout.write(str(n) + "\n")
+For printing a list of integers, instead of
+
+print(*list)
+Use :-
+
+sys.stdout.write(" ".join(map(str,list)) + "\n")
